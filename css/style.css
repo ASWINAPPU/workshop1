@@ -12,6 +12,13 @@ body {
   font-size: 17px;
 }
 
+.vertical {
+  border-left: 1px solid black;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+}
+
 .topbar {
   background-color: #E4FAF4;
   width: auto;
@@ -186,6 +193,10 @@ header {
   display: flex;
   justify-content: space-around;
   opacity: 100%;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.699999988079071;
+  text-align: center;
 }
 
 .container__3 {
@@ -334,11 +345,6 @@ header {
   padding-top: 50px;
 }
 
-.footer__align {
-  display: flex;
-  align-items: center;
-}
-
 .footer__logobottom {
   margin-top: 50px;
   transform: scale(2);
@@ -355,6 +361,11 @@ header {
   font-size: 17px;
   line-height: 23px;
   text-align: left;
+}
+
+.footer__logobottom {
+  transform: scale(1.5);
+  margin: 0 60px;
 }
 
 .footer__links {
@@ -449,6 +460,14 @@ select {
 
 select option:hover {
   border: none;
+}
+
+#easy {
+  background-color: aqua;
+  height: 2px;
+  width: 5px;
+  margin: 5px 10px;
+  border: 2px solid black;
 }
 
 @media only screen and (max-width: 400px) {
@@ -648,8 +667,8 @@ select option:hover {
     flex-direction: column-reverse;
     padding: 0;
     align-items: center;
-    justify-content: center;
-    justify-content: flex-end;
+    text-align: center;
+    justify-content: flex-start;
   }
   .footer__bar__content {
     font-size: 12px;

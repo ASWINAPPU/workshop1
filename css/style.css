@@ -13,10 +13,10 @@ body {
 }
 
 .vertical {
-  border-left: 1px solid black;
-  height: 10px;
-  position: absolute;
-  left: 50%;
+  border-right: 1px solid black;
+  height: 15px;
+  position: relative;
+  left: 5px;
 }
 
 .topbar {
@@ -466,8 +466,6 @@ select option:hover {
   background-color: aqua;
   height: 2px;
   width: 5px;
-  margin: 5px 10px;
-  border: 2px solid black;
 }
 
 @media only screen and (max-width: 400px) {

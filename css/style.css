@@ -29,13 +29,14 @@ body {
 .topbar__content {
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .topbar__content ul {
   display: flex;
   text-align: center;
   font-size: 14px;
-  margin: 0 100px;
   font-weight: 700;
   align-items: center;
 }
@@ -57,15 +58,13 @@ a {
   color: #222222;
 }
 
-.navbar {
+.navbar__align {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
-}
-
-.navbar__links {
-  margin-right: 100px;
+  padding-top: 25px;
+  margin: auto;
 }
 
 .navbar__search {
@@ -99,10 +98,6 @@ a {
   padding: 0 15px;
 }
 
-.navbar__logo {
-  padding: 0 10px 0 100px;
-}
-
 header {
   height: 102px;
 }
@@ -116,14 +111,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  width: auto;
+  max-width: 1440px;
   margin: auto;
-  padding: 0 100px;
 }
 
 .container__1 img {
-  margin: 100px;
+  margin: 100px 0;
 }
 
 .container__1__content {
@@ -169,15 +162,15 @@ header {
 .container__2 {
   background-color: #E4FAF4;
   box-shadow: 0 5px 20px 0 rgba(90, 202, 157, 0.05);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: auto;
   margin: auto;
 }
 
-.container__2__content {
-  margin: 0 150px;
+.container__2__align {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
 .container__2__content p {
@@ -189,7 +182,6 @@ header {
 }
 
 .container__2__img {
-  margin: 0 100px;
   display: flex;
   justify-content: space-around;
   opacity: 100%;
@@ -340,7 +332,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  height: 397px;
   box-shadow: 0 -35px 20px 0 rgba(0, 0, 0, 0.03);
   padding-top: 50px;
 }
@@ -472,11 +463,12 @@ select option:hover {
   * {
     margin: 0;
     padding: 0;
+    max-width: 400px;
   }
   .topbar {
     display: none;
   }
-  .navbar {
+  .navbar__align {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 10px;
@@ -529,10 +521,6 @@ select option:hover {
   .container__1 img {
     display: none;
   }
-  .container__2 {
-    flex-direction: column;
-    margin: auto;
-  }
   .container__2__content {
     margin: 0 150px;
   }
@@ -550,6 +538,11 @@ select option:hover {
     line-height: 39.84px;
     width: 313px;
     text-align: left;
+  }
+  .container__2__align {
+    flex-direction: column;
+    margin: auto;
+    max-width: 400px;
   }
   .container__3 {
     flex-direction: column;

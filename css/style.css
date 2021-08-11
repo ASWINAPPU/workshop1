@@ -29,8 +29,6 @@ body {
 .topbar__content {
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
-  margin: auto;
 }
 
 .topbar__content ul {
@@ -59,7 +57,6 @@ a {
 }
 
 .navbar__align {
-  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,8 +108,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
-  margin: auto;
+}
+
+.container__1__img {
+  width: 50%;
 }
 
 .container__1 img {
@@ -121,7 +120,7 @@ header {
 
 .container__1__content {
   height: 338px;
-  width: 455px;
+  width: 50%;
 }
 
 .container__1__content h1 {
@@ -163,15 +162,12 @@ header {
 .container__2 {
   background-color: #E4FAF4;
   box-shadow: 0 5px 20px 0 rgba(90, 202, 157, 0.05);
-  margin: auto;
 }
 
 .container__2__align {
-  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
 .container__2__content p {
@@ -197,8 +193,6 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 791px;
-  max-width: 1440px;
-  margin: auto;
 }
 
 .container__3 h2 {
@@ -237,9 +231,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
-  margin: auto;
   height: 791px;
+}
+
+.container__4__img {
+  width: 50%;
 }
 
 .container__4__paint {
@@ -349,8 +345,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  max-width: 1440px;
-  margin: auto;
   padding-top: 50px;
 }
 
@@ -397,6 +391,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-grow: 1;
 }
 
 .footer__links__col1 div {
@@ -426,8 +421,6 @@ header {
 }
 
 .footer__bar {
-  max-width: 1440px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -479,11 +472,21 @@ select option:hover {
   width: 5px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 1200px) {
+  .block {
+    margin: auto;
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
   * {
     margin: 0;
     padding: 0;
-    max-width: 400px;
+    max-width: 540px;
+  }
+  .block {
+    max-width: 540px;
   }
   .topbar {
     display: none;
@@ -619,8 +622,6 @@ select option:hover {
     text-align: left;
   }
   .container__5 {
-    max-width: 1440px;
-    margin: auto;
     margin-top: 30px;
     position: relative;
   }
@@ -632,11 +633,6 @@ select option:hover {
   }
   .container__5 p {
     padding-bottom: 50px;
-  }
-  .container__chat {
-    position: absolute;
-    left: 275px;
-    top: 240px;
   }
   .footer {
     flex-direction: column;

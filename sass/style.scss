@@ -31,8 +31,7 @@ body{
         //padding: 3px;
         display: flex;
         justify-content: space-between;
-        max-width: 1440px;
-        margin: auto;
+        
         ul{
             display: flex;
             text-align: center;
@@ -65,7 +64,7 @@ color:$font_color;}
     
   
     &__align{
-        max-width: 1440px;
+        //max-width: 1140px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -130,18 +129,17 @@ header{
     display: flex;
     justify-content:space-between;
     align-items: center;
-   // flex-wrap: wrap;
-    max-width: 1440px;
-    margin: auto;
-   // padd./    ing: 0 100px;
-    
+   // flex-wrap: wrap;  
+   &__img{
+    width: 50%;
+   }
     img{ 
         margin: 100px 0;
-        
+        //width: 100%;
          }
          &__content{
             height: 338px;
-            width: 455px;
+            width: 50%;
            // margin-left:150px;
             //padding: 10px;
             h1{
@@ -195,14 +193,14 @@ header{
          
          //height: auto;
         &__align{
-            max-width: 1440px;
+            
             display: flex;
         
          justify-content: space-between;
          align-items: center;
-         margin: auto;
+         
         }
-         margin: auto;
+         
          //flex-wrap: wrap;
     }
     &__2__content{
@@ -234,8 +232,7 @@ header{
         justify-content: space-between;
         align-items: center;
         height: 791px;
-        max-width: 1440px;
-        margin: auto;
+       
         h2{
             font-size: 40px;
         }
@@ -272,8 +269,9 @@ header{
     {   display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1440px;
-        margin: auto;
+       &__img{
+           width: 50%;
+       }
         &__paint{
         
         background-image: linear-gradient(180deg, #E4FAF4 0%, #FFFFFF 100%);}
@@ -396,8 +394,7 @@ header{
         display:flex;
         justify-content: space-around;
         align-items: flex-start;
-        max-width: 1440px;
-        margin:auto;
+       
         padding-top: 50px;
    
     }
@@ -443,6 +440,7 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-grow: 1;
         div{
             padding: 20px;
         }
@@ -473,8 +471,7 @@ header{
 }
 
 .footer__bar{
-    max-width: 1440px;
-    margin: auto;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -527,12 +524,23 @@ select option:hover{
     //margin:5px 10px;
     // border: 2px solid black;
 }
-@media only screen and (max-width:400px){
+// .block
+@media only screen and (min-width:1200px)
+{
+    .block{
+        margin: auto;
+        max-width: 1140px;
+    }
+}
+@media only screen and (max-width:576px){
     
     *{
         margin: 0;
         padding: 0;
-        max-width: 400px;
+        max-width: 540px;
+    }
+    .block{
+        max-width: 540px;
     }
     
     .topbar{
@@ -705,8 +713,7 @@ select option:hover{
             }
         }
         &__5{
-            max-width: 1440px;
-            margin: auto;
+            
             margin-top: 30px;
             position: relative;
             
@@ -725,12 +732,12 @@ select option:hover{
             }
         }
     }
-    .container__chat{
+    // .container__chat{
     
-        position: absolute;
-        left: 275px;
-        top:240px;
-    }
+    //     position: absolute;
+    //     left: 200px;
+    //     top:240px;
+    // }
     // .footer__align{
     //     display: flex;
     //     flex-direction: column;

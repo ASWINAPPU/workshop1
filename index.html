@@ -7,6 +7,7 @@
     <title>Neofund</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./script.js"></script>
 </head>
 <body>
     <header>
@@ -154,33 +155,39 @@
     </div>
     <div class="footer__links">
         <div class="footer__links__col1">
-            <div class="footer__links__1">
+            <div class="footer__links__1 ">
                 <!-- <div class="mob"><span><h4>Quick Links</h4></span><span><img src="./assets/172525_plus_icon.svg"></span></div> -->
                 <h4>Quick Links</h4>
-                <ul>
+                <ul  >
 
-                    <li><a href="#">Explore Funds</a></li>
+                    <li ><a href="#">Explore Funds</a></li>
                     <li><a href="#">Direct Mutal Funds</a></li>
                     <li><a href="#">Personal Loan</a></li>
                     <li><a href="#">LoanPass</a></li>
                 </ul>
+                
             </div>
             <div class="footer__links__2">
                 <h4>Top Funded Houses</h4>
-                <ul>
+                <ul >
                     <li><a href="#">SBI Mutal Fund</a></li>
                     <li><a href="#">HDFC Mutal Fund</a></li>
                     <li><a href="#">Reliance Mutal Fund</a></li>
                     <li><a href="#">L&T Mutal Fund</a></li>
                 </ul>
+                
             </div>
-            <div class="footer__links__3">
+            <div class="footer__links__3 ">
                 <h4>Resources</h4>
                 <ul>
+                    
+                    <div class="panel">
                     <li><a href="#">Calculators</a></li>
                     <li><a href="#">Beginner’s Guide</a></li>
                     <li><a href="#">Sitemap</a></li>
+                </div>
                 </ul>
+               
             </div>
         </div>
         <div class="footer__links__col2">  
@@ -223,7 +230,21 @@
         <img src="./assets/social 3.svg">
     </div>
 </div>
-
+<script>var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }</script>
 
 </body>
+
 </html>

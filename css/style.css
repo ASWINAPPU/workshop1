@@ -47,6 +47,10 @@ body {
   margin: 0 5px;
 }
 
+.mobile__view {
+  display: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -75,13 +79,23 @@ a {
 .navbar__search input {
   border: none;
   background-color: #F5F5F5;
-  font-size: 10px;
+  font-size: 12px;
   opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.navbar__search input:focus {
+  color: black;
+  opacity: 1;
+  font-size: 12px;
 }
 
 .navbar__search img {
   padding-right: 3px;
   transform: scale(0.6);
+  text-align: center;
 }
 
 .navbar ul {
@@ -116,6 +130,7 @@ header {
 
 .container__1 img {
   margin: 100px 0;
+  width: 100%;
 }
 
 .container__1__content {
@@ -192,7 +207,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 791px;
+}
+
+.container__3__img {
+  width: 50%;
 }
 
 .container__3 h2 {
@@ -227,15 +245,22 @@ header {
   color: aqua;
 }
 
+.container__3__links a:hover {
+  color: black;
+}
+
 .container__4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 791px;
 }
 
 .container__4__img {
   width: 50%;
+}
+
+.container__4__img img {
+  width: 100%;
 }
 
 .container__4__paint {
@@ -346,6 +371,10 @@ header {
   justify-content: space-around;
   align-items: flex-start;
   padding-top: 50px;
+}
+
+.footer li:hover {
+  opacity: 1;
 }
 
 .footer__logobottom {
@@ -472,6 +501,15 @@ select option:hover {
   width: 5px;
 }
 
+.hide:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.4s;
+}
+
+.block {
+  margin: auto;
+}
+
 @media only screen and (min-width: 1200px) {
   .block {
     margin: auto;
@@ -483,10 +521,10 @@ select option:hover {
   * {
     margin: 0;
     padding: 0;
-    max-width: 540px;
   }
   .block {
     max-width: 540px;
+    margin: 0 20px;
   }
   .topbar {
     display: none;
@@ -499,7 +537,7 @@ select option:hover {
   .navbar__search {
     transform: scale(1.2);
     margin: 0 50px;
-    width: 260px;
+    width: 100%;
   }
   .navbar .navbar ul {
     flex-direction: column;
@@ -514,15 +552,12 @@ select option:hover {
   .hide {
     display: none;
   }
-  .container__align {
-    margin: auto;
-  }
   .container__button {
     margin: 30px 0;
   }
   .container__1 {
     padding: 0 20px;
-    margin: 25px 0;
+    margin: 35px 0;
   }
   .container__1__content {
     font-size: 10px;
@@ -544,9 +579,6 @@ select option:hover {
   .container__1 img {
     display: none;
   }
-  .container__2__content {
-    margin: 0 150px;
-  }
   .container__2__content p {
     padding-top: 10px;
     font-size: 17px;
@@ -564,14 +596,17 @@ select option:hover {
   }
   .container__2__align {
     flex-direction: column;
-    margin: auto;
-    max-width: 400px;
+    align-items: flex-start;
   }
   .container__3 {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .container__3__img {
+    width: 100%;
   }
   .container__3__img img {
-    width: 335px;
+    width: 100%;
     height: 251px;
     margin: 50px 0;
   }
@@ -598,16 +633,19 @@ select option:hover {
   .container__3__links {
     margin: 50px 0;
   }
-  .container__4 {
+  .container__4__img {
+    display: none;
+  }
+  .container__4__paint {
     flex-direction: column;
     justify-content: flex-start;
     padding: 30px 0;
   }
-  .container__4__img {
-    display: none;
-  }
   .container__4__main {
     flex-direction: column;
+  }
+  .container__4__main p {
+    width: 100%;
   }
   .container__4__content h2 {
     font-size: 30px;
@@ -634,7 +672,39 @@ select option:hover {
   .container__5 p {
     padding-bottom: 50px;
   }
-  .footer {
+  .footer .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  .footer .active, .footer .accordion:hover {
+    background-color: #ccc;
+  }
+  .footer .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .footer .active:after {
+    content: "\2212";
+  }
+  .footer .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .footer__container {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

@@ -187,6 +187,7 @@ header{
         text-align: center;
         transition-duration: 0.4s;
         cursor: pointer;
+        outline: none;
         
         &:hover{
             background-color: #ffffff;
@@ -577,6 +578,9 @@ select option:hover{
         max-width: 540px;
         margin: 0 20px;
     }
+    .mobile__view{
+        display:block;
+    }
     
     .topbar{
         display: none;
@@ -785,6 +789,9 @@ select option:hover{
     //     align-items: center;
     // }
     .footer{
+        &__links__col1{
+            display: none;
+        }
         .accordion {
             background-color: #eee;
             color: #444;

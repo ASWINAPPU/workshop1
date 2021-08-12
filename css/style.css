@@ -166,6 +166,7 @@ header {
   text-align: center;
   transition-duration: 0.4s;
   cursor: pointer;
+  outline: none;
 }
 
 .container__button:hover {
@@ -526,6 +527,9 @@ select option:hover {
     max-width: 540px;
     margin: 0 20px;
   }
+  .mobile__view {
+    display: block;
+  }
   .topbar {
     display: none;
   }
@@ -671,6 +675,9 @@ select option:hover {
   }
   .container__5 p {
     padding-bottom: 50px;
+  }
+  .footer__links__col1 {
+    display: none;
   }
   .footer .accordion {
     background-color: #eee;

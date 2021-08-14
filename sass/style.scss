@@ -238,7 +238,7 @@ header{
         line-height: 19px;
         opacity: 0.699999988079071;
         text-align: center;
-        img,p{
+        p{
             width: 100%;
         }
         
@@ -925,7 +925,7 @@ select option:hover{
 }
 
 }
-@media only screen and (max-width:768px){
+@media (min-width: 768px) and (max-width: 991.98px) {
     .topbar{
         display: none;
     }
@@ -956,6 +956,50 @@ select option:hover{
                  }
             }
                 
+        }
+        &__2
+        {   
+            
+            &__align
+            {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            }
+            &__content
+            {
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        &__3
+        {
+            gap:20px
+        }
+        &__4{
+            flex-direction: column;
+            &__img{
+                display: none;
+            }
+            &__content{
+                h2{
+                    text-align: center;
+                }
+                p{
+                    width:100%;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+    .footer{
+        h4{
+        font-size: 12px;
+        }
+        li{
+            font-size: 13px;
         }
     }
 

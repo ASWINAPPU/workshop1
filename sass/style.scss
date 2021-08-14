@@ -567,8 +567,9 @@ select option:hover{
 }
  .block{
      margin: auto;
+     max-width: 1320px;
  }
-@media only screen and (min-width:1200px)
+@media only screen and (max-width:1200px)
 {
     .block{
         margin: auto;
@@ -1002,6 +1003,91 @@ select option:hover{
             font-size: 13px;
         }
     }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .block{
+        max-width: 960px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .topbar{
+        display: none;
+    }
+    .block{
+        max-width: 540px;
+        
+    }
+    .navbar{
+        &__align{
+            flex-direction: column;
+        }
+        
+        ul{
+             font-size:12px;
+             flex-direction: reverse;
+        }
+    }
+    .container{
+        &__1
+        {
+            &__img{
+                width:45%
+            }
+            &__content{
+                p{
+                    font-size: 15px;
+                    width: 100%;
+                 }
+            }
+                
+        }
+        &__2
+        {   
+            
+            &__align
+            {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            }
+            &__content
+            {
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        &__3
+        {
+            gap:20px
+        }
+        &__4{
+            flex-direction: column;
+            &__img{
+                display: none;
+            }
+            &__content{
+                h2{
+                    text-align: center;
+                }
+                p{
+                    width:100%;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+    .footer{
+        h4{
+        font-size: 12px;
+        }
+        li{
+            font-size: 13px;
+        }
+    }
+
 
 }
     

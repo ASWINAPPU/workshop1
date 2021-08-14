@@ -172,7 +172,7 @@ header {
 .container__button:hover {
   background-color: #ffffff;
   color: #00D09C;
-  border: 2px solid #00D09C;
+  border: 1px solid #00D09C;
 }
 
 .container__2 {
@@ -202,6 +202,10 @@ header {
   line-height: 19px;
   opacity: 0.699999988079071;
   text-align: center;
+}
+
+.container__2__img img, .container__2__img p {
+  width: 100%;
 }
 
 .container__3 {
@@ -387,7 +391,7 @@ header {
 
 .footer__logobottom img {
   Width: 189px;
-  Height: 135px;
+  margin: 25px 0;
 }
 
 .footer h4 {
@@ -631,13 +635,16 @@ select option:hover {
     margin: 15px 0;
   }
   .container__3 button {
-    width: 163px;
+    width: 159px;
     height: 52px;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .container__3__links {
     margin: 50px 0;
+  }
+  .container__3__links img {
+    padding-left: 0px;
   }
   .container__4__img {
     display: none;
@@ -652,6 +659,9 @@ select option:hover {
   }
   .container__4__main p {
     width: 100%;
+  }
+  .container__4__left {
+    margin-right: 0px;
   }
   .container__4__content h2 {
     font-size: 30px;
@@ -678,12 +688,18 @@ select option:hover {
   .container__5 p {
     padding-bottom: 50px;
   }
+  .rectanle {
+    border: 1px solid rgba(0, 208, 156, 0.2);
+    border-radius: 6px;
+    padding: 0px;
+    margin: 40px 20px;
+  }
   .footer__links__col1 {
     display: none;
   }
   .footer .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #ffffff;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -694,14 +710,14 @@ select option:hover {
     transition: 0.4s;
   }
   .footer .active, .footer .accordion:hover {
-    background-color: #ccc;
+    background-color: #00D09C;
   }
   .footer .accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+    margin-left: 135px;
   }
   .footer .active:after {
     content: "\2212";
@@ -768,6 +784,29 @@ select option:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+  .block {
+    max-width: 720px;
+  }
+  .navbar__align {
+    flex-direction: column;
+  }
+  .navbar ul {
+    font-size: 12px;
+    flex-direction: reverse;
+  }
+  .container__1__img {
+    width: 45%;
+  }
+  .container__1__content p {
+    font-size: 15px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

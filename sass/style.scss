@@ -194,7 +194,7 @@ header{
             color:#00D09C ;
             //border-color: #00D09C;
             //border: 5px #00D09C;
-            border: 2px solid #00D09C;
+            border: 1px solid #00D09C;
         }
         
 
@@ -238,6 +238,9 @@ header{
         line-height: 19px;
         opacity: 0.699999988079071;
         text-align: center;
+        img,p{
+            width: 100%;
+        }
         
     
     }
@@ -433,9 +436,11 @@ header{
     &__logobottom{
         margin-top: 50px;
         transform: scale(2);
+        
         img{
             Width:189px;
-            Height:135px;
+            //Height:135px;
+            margin: 25px 0;
         }
         
     }
@@ -710,15 +715,17 @@ select option:hover{
                 margin: 15px 0;
             }
             button{
-                width: 163px;
+                width: 159px;
                 height: 52px;
                 margin: 0;
-                margin-right: 20px;
+                margin-right: 10px;
                 
             }
             &__links{
                 margin: 50px 0;
-                
+                img{
+                    padding-left:0px  ;
+                }
             }
             
 
@@ -742,6 +749,13 @@ select option:hover{
                 //    line-height: 39px;
                 //    text-align: left;
                 //  }
+            }
+            &__left{
+               
+                margin-right:0px;
+                // height: 349px;
+                // width:260px ;
+                
             }
             &__content{
                 
@@ -791,13 +805,21 @@ select option:hover{
         
     //     align-items: center;
     // }
+    .rectanle{
+        border: 1px solid rgba(0, 208, 156, 0.2);
+        border-radius: 6px;
+        padding: 0px;
+        margin: 40px 20px;
+       // opacity: 0.5;
+        
+    }
     .footer{
         &__links__col1{
             display: none;
         }
         .accordion {
-            background-color: #eee;
-            color: #444;
+            background-color: #ffffff;
+            color: black;
             cursor: pointer;
             padding: 18px;
             width: 100%;
@@ -809,7 +831,7 @@ select option:hover{
           }
           
           .active, .accordion:hover {
-            background-color: #ccc;
+            background-color: #00D09C;
           }
           
           .accordion:after {
@@ -817,7 +839,7 @@ select option:hover{
             color: #777;
             font-weight: bold;
             float: right;
-            margin-left: 5px;
+            margin-left: 135px;
           }
           
           .active:after {
@@ -901,6 +923,41 @@ select option:hover{
     
     align-items: center;
 }
+
+}
+@media only screen and (max-width:768px){
+    .topbar{
+        display: none;
+    }
+    .block{
+        max-width: 720px;
+        
+    }
+    .navbar{
+        &__align{
+            flex-direction: column;
+        }
+        
+        ul{
+             font-size:12px;
+             flex-direction: reverse;
+        }
+    }
+    .container{
+        &__1
+        {
+            &__img{
+                width:45%
+            }
+            &__content{
+                p{
+                    font-size: 15px;
+                    width: 100%;
+                 }
+            }
+                
+        }
+    }
 
 }
     

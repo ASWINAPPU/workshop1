@@ -518,14 +518,20 @@ select option:hover {
   max-width: 1320px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (min-width: 992px) {
+  .block {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
   .block {
     margin: auto;
     max-width: 1140px;
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
@@ -788,71 +794,12 @@ select option:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .topbar {
     display: none;
   }
   .block {
     max-width: 720px;
-  }
-  .navbar__align {
-    flex-direction: column;
-  }
-  .navbar ul {
-    font-size: 12px;
-    flex-direction: reverse;
-  }
-  .container__1__img {
-    width: 45%;
-  }
-  .container__1__content p {
-    font-size: 15px;
-    width: 100%;
-  }
-  .container__2__align {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-  .container__2__content p {
-    text-align: center;
-  }
-  .container__3 {
-    gap: 20px;
-  }
-  .container__4 {
-    flex-direction: column;
-  }
-  .container__4__img {
-    display: none;
-  }
-  .container__4__content h2 {
-    text-align: center;
-  }
-  .container__4__content p {
-    width: 100%;
-    text-align: center;
-  }
-  .footer h4 {
-    font-size: 12px;
-  }
-  .footer li {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .block {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .topbar {
-    display: none;
-  }
-  .block {
-    max-width: 540px;
   }
   .navbar__align {
     flex-direction: column;

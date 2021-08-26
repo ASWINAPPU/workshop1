@@ -116,11 +116,7 @@ color:$font_color;}
             
         }
     }
-    &__logo{
-       // padding:0 10px 0 100px ;
-        // img{height:34px ;
-        // width: 128px;}
-    }
+    
 
 }
 header{
@@ -569,14 +565,21 @@ select option:hover{
      margin: auto;
      max-width: 1320px;
  }
-@media only screen and (max-width:1200px)
-{
+ @media (min-width: 992px){
     .block{
-        margin: auto;
-        max-width: 1140px;
+        max-width: 960px;
     }
 }
-@media only screen and (max-width:576px){
+
+
+@media (min-width: 1200px){
+    .block {
+        margin: auto;
+        max-width: 1140px;
+    } 
+}
+
+@media only screen and (max-width:768px){
     
     *{
         margin: 0;
@@ -619,10 +622,7 @@ select option:hover{
     .hide{
         display: none;
     }
-    .container__align{
-        //margin: auto;
-        
-    }
+    
     .container{
         //display: flex;
         //flex-direction: column;
@@ -888,10 +888,7 @@ select option:hover{
         }
        
     }
-    .footer__links__col2{
-        //justify-content:flex-start ;
-      }
-  
+    
     .footer__bar
     {flex-direction:column-reverse;
        // height: auto;
@@ -926,7 +923,7 @@ select option:hover{
 }
 
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px ) and (max-width:992px) {
     .topbar{
         display: none;
     }
@@ -1004,92 +1001,95 @@ select option:hover{
         }
     }
 
+
 }
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .block{
-        max-width: 960px;
-    }
-}
-@media (min-width: 576px) and (max-width: 767.98px){
-    .topbar{
-        display: none;
-    }
-    .block{
-        max-width: 540px;
+// @media (min-width: 576px) and (max-width: 767.98px){
+//     .topbar{
+//         display: none;
+//     }
+//     .block{
+//         max-width: 540px;
         
-    }
-    .navbar{
-        &__align{
-            flex-direction: column;
-        }
+//     }
+//     .navbar{
+//         &__align{
+//             flex-direction: column;
+//         }
         
-        ul{
-             font-size:12px;
-             flex-direction: reverse;
-        }
-    }
-    .container{
-        &__1
-        {
-            &__img{
-                width:45%
-            }
-            &__content{
-                p{
-                    font-size: 15px;
-                    width: 100%;
-                 }
-            }
+//         ul{
+//              font-size:12px;
+//              flex-direction: reverse;
+//         }
+//     }
+//     .container{
+//         &__1
+//         {
+//             &__img{
+//                 width:45%
+//             }
+//             &__content{
+//                 p{
+//                     font-size: 15px;
+//                     width: 100%;
+//                  }
+//             }
                 
-        }
-        &__2
-        {   
+//         }
+//         &__2
+//         {   
             
-            &__align
-            {
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            }
-            &__content
-            {
-                p{
-                    text-align: center;
-                }
-            }
-        }
-        &__3
-        {
-            gap:20px
-        }
-        &__4{
-            flex-direction: column;
-            &__img{
-                display: none;
-            }
-            &__content{
-                h2{
-                    text-align: center;
-                }
-                p{
-                    width:100%;
-                    text-align: center;
-                }
-            }
-        }
+//             &__align
+//             {
+//             flex-direction: column;
+//             text-align: center;
+//             justify-content: center;
+//             }
+//             &__content
+//             {
+//                 p{
+//                     text-align: center;
+//                 }
+//             }
+//         }
+//         &__3
+//         {
+//             gap:20px;
+//             flex-direction: column;
+//          &__img {
+//                 width: 100%;
+//                text-align: center;
+//             }
+//         }
+//         &__4{
+//             flex-direction: column;
+//             &__img{
+//                 display: none;
+//             }
+//             &__content{
+//                 h2{
+//                     text-align: center;
+//                 }
+//                 p{
+//                     width:100%;
+//                     text-align: center;
+//                 }
+//             }
+//         }
 
-    }
-    .footer{
-        h4{
-        font-size: 12px;
-        }
-        li{
-            font-size: 13px;
-        }
-    }
+//     }
+//     .footer{
+//         h4{
+//         font-size: 12px;
+//         }
+//         li{
+//             font-size: 13px;
+//         }
+//     }
 
 
-}
+// }
+
+
     
 
 

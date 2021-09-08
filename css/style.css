@@ -248,7 +248,8 @@ header {
 }
 
 .container__3__links a {
-  color: aqua;
+  color: #00D09C;
+  font-weight: bolder;
 }
 
 .container__3__links a:hover {
@@ -354,7 +355,7 @@ header {
 }
 
 .container__5__links {
-  display: inline-block;
+  display: inline-flex;
   margin: 20px 0;
 }
 
@@ -553,7 +554,8 @@ select option:hover {
   }
   .navbar__search {
     transform: scale(1.2);
-    margin: 0 50px;
+    margin: 0px 27px;
+    padding: 0 54px;
     width: 100%;
   }
   .navbar .navbar ul {
@@ -570,7 +572,7 @@ select option:hover {
     display: none;
   }
   .container__button {
-    margin: 30px 0;
+    margin-top: 50px;
   }
   .container__1 {
     padding: 0 20px;
@@ -595,6 +597,9 @@ select option:hover {
   }
   .container__1 img {
     display: none;
+  }
+  .container__2 {
+    margin-top: 120px;
   }
   .container__2__content p {
     padding-top: 10px;
@@ -651,7 +656,7 @@ select option:hover {
     margin: 50px 0;
   }
   .container__3__links img {
-    padding-left: 0px;
+    padding-left: 5px;
   }
   .container__4__img {
     display: none;
@@ -679,11 +684,11 @@ select option:hover {
     font-size: 17px;
     line-height: 29px;
     opacity: 0.699999988079071;
-    width: 335px;
+    width: 314px;
     text-align: left;
   }
   .container__5 {
-    margin-top: 30px;
+    margin-top: -75px;
     position: relative;
   }
   .container__5 h2 {
@@ -715,6 +720,9 @@ select option:hover {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    font-weight: bolder;
+    border: 1px solid #F0F0F0;
+    margin-bottom: 10px;
   }
   .footer .active, .footer .accordion:hover {
     background-color: #00D09C;
@@ -724,7 +732,7 @@ select option:hover {
     color: #777;
     font-weight: bold;
     float: right;
-    margin-left: 135px;
+    margin-left: 130px;
   }
   .footer .active:after {
     content: "\2212";

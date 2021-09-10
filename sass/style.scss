@@ -134,8 +134,9 @@ header{
 }
 .hamburger{
     
-        width: 35px !important;
+        width: 33px !important;
     margin-left: 132px;
+    display: none;
    }
 .container{
    // display: flex;
@@ -637,7 +638,9 @@ select option:hover{
     .mobile__view{
         display:block;
     }
-    
+    .hamburger{
+        display: inline-block;
+    }
     .topbar{
         display: none;
     }

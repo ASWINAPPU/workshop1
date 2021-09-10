@@ -1,5 +1,9 @@
 $font_main:'Lato', sans-serif;
 $font_color:#222222;
+@font-face {
+    font-family: FuturaBT;
+    src: url('fonts/Futura-Book-font.ttf');
+}
 *{
     box-sizing: border-box;
     margin:0px;
@@ -128,11 +132,17 @@ header{
         top:3px;
     }
 }
+.hamburger{
+    
+        width: 35px !important;
+    margin-left: 132px;
+   }
 .container{
    // display: flex;
     //flex-direction: column;
    // justify-content: space-evenly;
    // padding: 0 50px;
+   
     &__1
     {
     display: flex;
@@ -142,6 +152,7 @@ header{
    &__img{
     width: 50%;
    }
+   
     img{ 
         margin: 100px 0;
         width: 100%;
@@ -156,6 +167,9 @@ header{
                 font-size: 40px;
                 line-height: 47.95px;
                 margin-bottom: 45px;
+                margin-top: 9px;
+                font-family: 'FuturaBT',sans-serif;
+                font-weight: 100;
             }
             p{
                 
@@ -549,9 +563,20 @@ select option:hover{
     border: none;
 }
 #easy{
-    background-color: aqua;
-    height: 2px;
-    width: 5px;
+    position: relative;
+    font-weight: bold;
+}
+#easy::after{
+    content: '';
+    display: block;
+    background-color: #acf5e1;
+    width: 79px;
+    height: 10px;
+    position: absolute;
+    top: 30px;
+    right: 3px;
+    opacity: .6;
+    z-index: -1;
     //margin:5px 10px;
     // border: 2px solid black;
 }
@@ -586,6 +611,24 @@ select option:hover{
         margin: 0;
         padding: 0;
         
+    }
+    .mobile__button{
+        width:160px;
+
+    }
+    #easy::after{
+        content: '';
+        display: block;
+        background-color: #acf5e1;
+        width: 64px;
+        height: 10px;
+        position: absolute;
+        top: 22px;
+        right: 2px;
+        opacity: .6;
+        z-index: -1;
+        //margin:5px 10px;
+        // border: 2px solid black;
     }
     .block{
         max-width: 540px;
@@ -625,6 +668,7 @@ select option:hover{
        &__logo{
         padding:0 10px ;
         margin-bottom: 12px;
+        width: 110%;
 
         img{height:34px ;
         width: 128px;}
@@ -653,6 +697,7 @@ select option:hover{
                     line-height: 35.96px;
                     width: 283px;
                     text-align: left;
+                    font-weight: 100;
                 }
                 p{
                 
@@ -779,6 +824,9 @@ select option:hover{
                 // height: 349px;
                 // width:260px ;
                 
+            }
+            &__right{
+                margin-top: 60px;
             }
             &__content{
                 

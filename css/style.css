@@ -1,3 +1,8 @@
+@font-face {
+  font-family: FuturaBT;
+  src: url("fonts/Futura-Book-font.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -118,6 +123,11 @@ header {
   top: 3px;
 }
 
+.hamburger {
+  width: 35px !important;
+  margin-left: 132px;
+}
+
 .container__1 {
   display: flex;
   justify-content: space-between;
@@ -143,6 +153,9 @@ header {
   font-size: 40px;
   line-height: 47.95px;
   margin-bottom: 45px;
+  margin-top: 9px;
+  font-family: 'FuturaBT',sans-serif;
+  font-weight: 100;
 }
 
 .container__1__content p {
@@ -503,9 +516,21 @@ select option:hover {
 }
 
 #easy {
-  background-color: aqua;
-  height: 2px;
-  width: 5px;
+  position: relative;
+  font-weight: bold;
+}
+
+#easy::after {
+  content: '';
+  display: block;
+  background-color: #acf5e1;
+  width: 79px;
+  height: 10px;
+  position: absolute;
+  top: 30px;
+  right: 3px;
+  opacity: .6;
+  z-index: -1;
 }
 
 .hide:hover {
@@ -535,6 +560,21 @@ select option:hover {
   * {
     margin: 0;
     padding: 0;
+  }
+  .mobile__button {
+    width: 160px;
+  }
+  #easy::after {
+    content: '';
+    display: block;
+    background-color: #acf5e1;
+    width: 64px;
+    height: 10px;
+    position: absolute;
+    top: 22px;
+    right: 2px;
+    opacity: .6;
+    z-index: -1;
   }
   .block {
     max-width: 540px;
@@ -569,6 +609,7 @@ select option:hover {
   .navbar__logo {
     padding: 0 10px;
     margin-bottom: 12px;
+    width: 110%;
   }
   .navbar__logo img {
     height: 34px;
@@ -592,6 +633,7 @@ select option:hover {
     line-height: 35.96px;
     width: 283px;
     text-align: left;
+    font-weight: 100;
   }
   .container__1__content p {
     padding: 10px 0;
@@ -688,6 +730,9 @@ select option:hover {
   }
   .container__4__left {
     margin-right: 0px;
+  }
+  .container__4__right {
+    margin-top: 60px;
   }
   .container__4__content h2 {
     font-size: 30px;

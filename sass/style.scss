@@ -232,7 +232,7 @@ header{
         opacity: 100%;
         font-size: 14px;
         line-height: 19px;
-        opacity: 0.699999988079071;
+        
         text-align: center;
         p{
             width: 100%;
@@ -601,21 +601,30 @@ select option:hover{
    .navbar{
        &__align{flex-direction: column;
         align-items: flex-start;
-        margin-top:10px;}
+        margin-top:0px;
+        margin-bottom: 1px;
+        
+        width: 80%;
+    }
       // line-height: 5;
       // width: 100%;
        &__search{
            transform: scale(1.2);
-           margin: 0px 27px;
+           margin: 0px 0px;
+           margin-left: 27px;
            padding: 0 54px;
          width: 100%;
            
+       }
+       &__links{
+           width: 100%;
        }
        .navbar ul{
            flex-direction: column;
        }
        &__logo{
         padding:0 10px ;
+        margin-bottom: 12px;
 
         img{height:34px ;
         width: 128px;}
@@ -682,7 +691,7 @@ select option:hover{
                     width: 313px;
                     text-align: left;   
                 }
-
+               
                 
             }
             &__align{
@@ -690,6 +699,17 @@ select option:hover{
             
             align-items: flex-start;
             }
+            &__img{
+       
+                margin-top: 50px;
+                margin-bottom: 40px;
+                
+                text-align: center;
+                p{
+                    width: 100%;
+                   
+                }}
+
 
         }
         &__3
@@ -811,9 +831,18 @@ select option:hover{
     .rectanle{
         border: 1px solid rgba(0, 208, 156, 0.2);
         border-radius: 6px;
-        padding: 0px;
-        margin: 40px 20px;
+        padding: 9px 13px 13px 13px;
+        margin: 0;
+        margin: 7px;
        // opacity: 0.5;
+       p{
+           font-size: 11.2px;
+           opacity: 0.699999988079071;
+       }
+       img{
+           width: 44px;
+           height: 45px;
+       }
         
     }
     .footer{

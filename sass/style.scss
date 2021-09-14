@@ -660,18 +660,22 @@ select option:hover{
            margin-left: 27px;
            padding: 0 54px;
          width: 100%;
+         
            
        }
        &__links{
            width: 100%;
+           margin-top: 15px;
        }
        .navbar ul{
            flex-direction: column;
+           margin-top: 10px;
        }
        &__logo{
         padding:0 10px ;
         margin-bottom: 12px;
         width: 110%;
+        box-shadow:0px 14px 20px 0px #c6c6c6;
 
         img{height:34px ;
         width: 128px;}

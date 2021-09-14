@@ -606,14 +606,17 @@ select option:hover {
   }
   .navbar__links {
     width: 100%;
+    margin-top: 15px;
   }
   .navbar .navbar ul {
     flex-direction: column;
+    margin-top: 10px;
   }
   .navbar__logo {
     padding: 0 10px;
     margin-bottom: 12px;
     width: 110%;
+    box-shadow: 0px 14px 20px 0px #c6c6c6;
   }
   .navbar__logo img {
     height: 34px;

@@ -12,9 +12,12 @@ $font_color:#222222;
 }
 .box-shadow{
     position: absolute;
-    box-shadow: 2px -1px 20px 10px rgba(198, 198 ,198 , 0.6);
-    width: -webkit-fill-available;
-    height: 61px;
+    box-shadow: 1px -10px 13px 20px rgba(198, 198,198, 0.6);
+    width: 107%;
+    height: 60px;
+    top: 0;
+    z-index: -1;
+    display: none;
   
   }
 body{
@@ -621,6 +624,10 @@ select option:hover{
         padding: 0;
         
     }
+    .box-shadow{
+        display: block;
+    }
+
     .mobile__button{
         width:160px;
 

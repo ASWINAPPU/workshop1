@@ -9,6 +9,13 @@
   padding: 0px;
 }
 
+.box-shadow {
+  position: absolute;
+  box-shadow: 2px -1px 20px 10px rgba(198, 198, 198, 0.6);
+  width: -webkit-fill-available;
+  height: 61px;
+}
+
 body {
   max-width: 100%;
   font-family: "Lato", sans-serif;
@@ -63,6 +70,10 @@ ul {
 a {
   text-decoration: none;
   color: #222222;
+}
+
+.navbar {
+  position: relative;
 }
 
 .navbar__align {
@@ -593,17 +604,17 @@ select option:hover {
   }
   .navbar__align {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 0px;
     margin-bottom: 1px;
+    justify-content: center;
     width: 87%;
   }
   .navbar__search {
     transform: scale(1.2);
     margin: 0px 0px;
-    margin-left: 27px;
     padding: 0 54px;
-    width: 92%;
+    width: 86%;
   }
   .navbar__links {
     width: 100%;

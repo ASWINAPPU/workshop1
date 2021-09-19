@@ -139,7 +139,6 @@ header {
 
 .hamburger {
   width: 33px !important;
-  margin-left: 132px;
   display: none;
 }
 
@@ -614,7 +613,7 @@ select option:hover {
     margin-top: 0px;
     margin-bottom: 1px;
     justify-content: center;
-    width: 87%;
+    width: 92%;
   }
   .navbar__search {
     transform: scale(1.2);
@@ -633,7 +632,7 @@ select option:hover {
   .navbar__logo {
     padding: 0 10px;
     margin-bottom: 12px;
-    width: 110%;
+    width: 100%;
     box-shadow: 0px 14px 20px 0px rgba(198, 198, 198, 0.013);
     display: flex;
     justify-content: space-between;
